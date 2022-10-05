@@ -13,7 +13,7 @@ body {
     font-size: 36px;
     padding: 15px;
     color: #8c6b48;
-    background-color: white;
+    background-color: #45b6fe;
   }
   
   h2 {
@@ -34,7 +34,7 @@ body {
   }
   
   th {
-    border: 2px solid #8c6b48;
+    border: 2px solid #fff;
   }
   
   table {
