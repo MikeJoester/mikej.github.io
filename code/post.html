@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+              colors: {
+                  clifford: '#da373d',
+              },
+              minWidth: {
+                  '1/2' : '50%',
+              },
+          }
+        }
+      }
+    </script>
+</head>
+
+<body>
+    <div class="login-header">
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+        <div class="flex flex-col px-10 pb-10 pt-32">
+            <div class="flex flex-row space-x-8">
+                <div class="basis-2/3 flex flex-col text-left space-y-3">
+                    <h1 class="text-6xl">Article Title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h1>
+                    <div class="flex flex-row justify-between text-xl">
+                        <div class="flex flex-row space-x-1">
+                            <h1 class="font-semibold text-yellow-400"><a href="user.html">RigumaBallz</a></h1>
+                            <h1>,</h1>
+                            <div class="flex flex-row space-x-1 items-center">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="ml-1"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" fill="#fff"/></svg>
+                                <h1>28/9/2022</h1>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-row space-x-4">
+                            <button>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="bg-red"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z" fill="white"/></svg> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" fill="red"/></svg>
+                            </button>
+    
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" fill="white"/></svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <img class="py-3" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+                    <p class="text-justify text-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum nec orci sollicitudin ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam efficitur vehicula consectetur. Donec vel vestibulum tortor. Aenean facilisis odio nec ex vulputate laoreet. Proin et eros lacus. Suspendisse a nibh eget justo eleifend dapibus et id ante. Vivamus lobortis ultrices dolor ut vulputate. Morbi quis mauris a augue sodales aliquet. Aliquam fringilla lectus eu ultricies elementum. Duis hendrerit sapien ac est iaculis malesuada. Morbi non ante augue. Suspendisse potenti. Curabitur in nulla non ex vulputate cursus eu tincidunt est. Suspendisse potenti. Nulla at interdum dolor. Aliquam eget accumsan velit. Etiam tincidunt at ante ac dapibus. Aliquam dapibus, ex non posuere aliquam, enim leo rhoncus dolor, non euismod risus lectus eu sem. Donec nec ante finibus, varius turpis ac, eleifend nisi. Ut efficitur eu nisl ultrices ullamcorper. Mauris tristique eros arcu, vitae elementum odio egestas eu.
+                    </p>
+                    <p class="text-justify text-lg">
+                        Nulla elementum lorem quis metus ullamcorper, ac eleifend mi convallis. Nam blandit orci sed nibh vehicula maximus. Phasellus a erat porta, fringilla libero ut, fermentum turpis. Cras ultrices odio nec congue elementum. Nunc non ullamcorper nunc, nec mollis ante. Maecenas sagittis lectus nisi, id sodales ligula ullamcorper non. Nam eget nulla vel ex dignissim aliquam. Nunc ullamcorper orci ante, vel eleifend enim elementum a. Praesent volutpat a neque et congue. Nullam gravida odio blandit facilisis dictum. Fusce vel consectetur nisl. Proin sodales nibh ipsum, sed lacinia neque rutrum in. Nullam dapibus tempor dui viverra sollicitudin. Nulla est orci, semper ornare risus nec, mattis lobortis felis. Cras fringilla tellus tortor, sit amet pharetra neque imperdiet ut.
+                    </p>
+    
+                    <div class="flex flex-col pt-10">
+                        <h1 class="text-2xl">More from RigumaBallz:</h1>
+                        <div class="flex flex-row overflow-x-scroll space-x-5 p-3">
+                            <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                <div class="relative flex items-end overflow-hidden rounded-xl">
+                                    <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                </div>
+                        
+                                <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                    <h3 class="text-xl text-white font-bold">
+                                        Article Name</h3>
+                                    <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                </div>
+                            </div>
+                            <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                <div class="relative flex items-end overflow-hidden rounded-xl">
+                                    <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                </div>
+                        
+                                <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                    <h3 class="text-xl text-white font-bold">
+                                        Article Name</h3>
+                                    <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                </div>
+                            </div>
+                            <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                <div class="relative flex items-end overflow-hidden rounded-xl">
+                                    <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                </div>
+                        
+                                <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                    <h3 class="text-xl text-white font-bold">
+                                        Article Name</h3>
+                                    <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                </div>
+                            </div>
+                            <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                <div class="relative flex items-end overflow-hidden rounded-xl">
+                                    <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                </div>
+                        
+                                <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                    <h3 class="text-xl text-white font-bold">
+                                        Article Name</h3>
+                                    <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-1/3 flex-1 flex-col">
+                    <div class="flex flex-col space-y-5">
+                      <h1 class="font-bold self-start text-2xl">LATEST POSTS</h1>
+                      <div class="flex flex-row bg-slate-600 scale-100 hover:scale-110 ease-in-out duration-150 rounded-xl space-x-2">
+                        <img src="https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" class="w-2/5 rounded-l-xl"/>
+          
+                        <div class="flex flex-col justify-start text-left p-2">
+                          <a href="post.html"><h1 class="font-bold text-xl">Article Title</h1></a>
+                          <div class="flex flex-row space-x-1">
+                            <p class="text-base">By:</p> 
+                            <a href="#"><p class="text-base text-yellow-400 font-semibold">RigumaBallz</p></a>
+                          </div>
+                          <p class="text-sm text-justify pr-5 overflow-hidden">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed interdum ipsum. Curabitur eu finibus elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex flex-row bg-slate-600 scale-100 hover:scale-110 ease-in-out duration-150 rounded-xl space-x-2">
+                        <img src="https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" class="w-2/5 rounded-l-xl"/>
+          
+                        <div class="flex flex-col justify-start text-left p-2">
+                          <a href="post.html"><h1 class="font-bold text-xl">Article Title</h1></a>
+                          <div class="flex flex-row space-x-1">
+                            <p class="text-base">By:</p> 
+                            <a href="#"><p class="text-base text-yellow-400 font-semibold">RigumaBallz</p></a>
+                          </div>
+                          <p class="text-sm text-justify pr-5 overflow-hidden">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed interdum ipsum. Curabitur eu finibus elit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="flex flex-row bg-slate-600 scale-100 hover:scale-110 ease-in-out duration-150 rounded-xl space-x-2">
+                        <img src="https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" class="w-2/5 rounded-l-xl"/>
+          
+                        <div class="flex flex-col justify-start text-left p-2">
+                          <a href="post.html"><h1 class="font-bold text-xl">Article Title</h1></a>
+                          <div class="flex flex-row space-x-1">
+                            <p class="text-base">By:</p> 
+                            <a href="#"><p class="text-base text-yellow-400 font-semibold">RigumaBallz</p></a>
+                          </div>
+                          <p class="text-sm text-justify pr-5 overflow-hidden">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed interdum ipsum. Curabitur eu finibus elit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>

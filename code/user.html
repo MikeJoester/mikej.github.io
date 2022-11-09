@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-header">
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+        <div class="flex flex-col p-20 text-left space-y-10 mt-20">
+            <div class="flex flex-row space-x-10">
+                <div class="flex-initial flex-col content-center space-y-10">
+                <div class="w-96 h-96 bg-center profile-img rounded-lg"></div>
+                <button class="bg-slate-400 w-96 rounded-lg hover:bg-slate-500 ease-in-out duration-150 text-3xl py-2">Change Avatar</button>
+                </div>
+                
+                <div class="flex-1 content-between space-y-10">
+                <h1 class="inline border-t-2 border-b-2 text-4xl font-semibold w-1/5 pt-1 py-2">ABOUT ME</h1>
+
+                <div class="flex flex-row space-x-2">
+                    <h1>Username: </h1>
+                    <input type="text" value="username" class="rounded-lg text-black py-1 px-2"/>
+                    <button class="bg-slate-400 px-2 rounded-lg hover:bg-slate-500 ease-in-out duration-150">Edit Info</button>
+                </div>
+
+                <div class="flex flex-col space-y-1">
+                    <textarea rows="4" cols="50" class="text-black p-2 rounded-lg w-auto">User description here...</textarea>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                    <button class="bg-red-600 px-4 py-1 rounded-lg hover:bg-red-700 ease-in-out duration-150">Log Out</button>
+                    <button class="bg-slate-400 rounded-lg px-3 py-1 flex flex-row items-center hover:bg-slate-500 ease-in-out duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z" fill="white"/></svg>
+                    <h1 class="pl-3">Edit Description</h1>
+                    </button>
+                </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-5">
+                <h1 class="text-4xl font-semibold">YOUR POSTS</h1>
+                <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+                    <table class="w-full text-left text-gray-500 dark:text-gray-400">
+                        <thead class="text-lg text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="py-3 px-6">
+                                    post name
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Date Published
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Likes
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Shares
+                                </th>
+                                <th scope="col" class="py-3 px-6">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-base">
+                            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 hover:cursor-pointer hover:bg-slate-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Article Name 1
+                                </th>
+                                <td class="py-4 px-6">
+                                    29/8/2022
+                                </td>
+                                <td class="py-4 px-6">
+                                    69
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 hover:cursor-pointer hover:bg-slate-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Article Name 2
+                                </th>
+                                <td class="py-4 px-6">
+                                    29/8/2022
+                                </td>
+                                <td class="py-4 px-6">
+                                    69
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 hover:cursor-pointer hover:bg-slate-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Article Name 3
+                                </th>
+                                <td class="py-4 px-6">
+                                    29/8/2022
+                                </td>
+                                <td class="py-4 px-6">
+                                    69
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700 hover:cursor-pointer hover:bg-slate-600">
+                                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Article Name 4
+                                </th>
+                                <td class="py-4 px-6">
+                                    29/8/2022
+                                </td>
+                                <td class="py-4 px-6">
+                                    69
+                                </td>
+                                <td class="py-4 px-6">
+                                    5
+                                </td>
+                                <td class="py-4 px-6">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                },
+                minWidth: {
+                    '1/2' : '50%',
+                },
+            }
+          }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>   
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="flex flex-wrap justify-between items-center">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 items-center">
+                    <li>
+                    <a href="home.html" class="block py-2 pr-4 pl-3 text-white bg-white rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent  ">Write</a>
+                    </li>
+                    <li>
+                        <button class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" type="button" onclick="toggleModal('modal-id')">
+                            Search
+                        </button>
+
+                        <div class="backdrop-blur-sm hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center " id="modal-id">
+                        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                            <!--content-->
+                            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-slate-800 outline-none focus:outline-none">
+                            <!--header-->
+                            <div class="flex p-5 border-b border-solid border-slate-200 rounded-t justify-between">
+                                <h3 class="bg-transparent text-3xl block font-semibold">
+                                    Search Bar
+                                </h3>
+                                <button class="px-3 pb-2 bg-transparent border-0 text-white float-right leading-none font-semibold outline-white hover:bg-slate-200 hover:text-slate-800 rounded-xl" onclick="toggleModal('modal-id')">
+                                    <span class="bg-transparent text-3xl block">
+                                        ×
+                                    </span>
+                                </button>
+                                
+                            </div>
+                            <!--body-->
+                            <div class="flex flex-col p-6">
+                                <div class="relative p-6 flex flex-row">
+                                    <input type="text" placeholder="Search anything..." class="pl-9 pr-3 py-3 text-lg w-full relative search-icon rounded-l-lg text-black"/>
+                            
+                                    <button class="bg-slate-500 px-5 text-xl rounded-r-lg hover:bg-slate-400"> Search </button>
+                                </div>
+                                <h1 class="px-6">Search Result:</h1>
+                                <div class="flex flex-row overflow-x-scroll space-x-5 p-6">
+                                    <!-- Element -->
+                                    <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                        <div class="relative flex items-end overflow-hidden rounded-xl">
+                                            <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                        </div>
+                                
+                                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                            <h3 class="text-xl text-white font-bold">
+                                                Article Name</h3>
+                                            <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                        </div>
+                                    </div>
+                                    <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                        <div class="relative flex items-end overflow-hidden rounded-xl">
+                                            <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                        </div>
+                                
+                                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                            <h3 class="text-xl text-white font-bold">
+                                                Article Name</h3>
+                                            <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                        </div>
+                                    </div>
+                                    <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                        <div class="relative flex items-end overflow-hidden rounded-xl">
+                                            <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                        </div>
+                                
+                                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                            <h3 class="text-xl text-white font-bold">
+                                                Article Name</h3>
+                                            <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                        </div>
+                                    </div>
+                                    <div class="relative cursor-pointer w-full rounded-xl bg-white shadow-lg hover:shadow-xl min-w-1/2">
+                                        <div class="relative flex items-end overflow-hidden rounded-xl">
+                                            <img src="https://i.pinimg.com/originals/fa/7b/c4/fa7bc4ef63fb8619e439ce052b7caf87.jpg" alt="wallpaper"/>
+                                        </div>
+                                
+                                        <div class="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-80">
+                                            <h3 class="text-xl text-white font-bold">
+                                                Article Name</h3>
+                                            <p class="mt-2 text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+                        <script type="text/javascript">
+                        function toggleModal(modalID){
+                            document.getElementById(modalID).classList.toggle("hidden");
+                            document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+                            document.getElementById(modalID).classList.toggle("flex");
+                            document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+                        }
+                        </script>
+                    </li>
+                    <li>
+                        <a href="user.html" class="block pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            <div class="flex flex-row space-x-2 justify-center">
+                                
+                                <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1092&q=80" class="w-14 h-14 rounded-full object-fill"/>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+</body>
+
+</html>
