@@ -15,43 +15,43 @@
           <div class="flex flex-col justify-between px-10 my-5 w-full">
             <h1 class="text-5xl font-bold mt-10 self-start">BlogName</h1>
             
-            <form class="w-full">
+            <form class="w-full" action="login.html">
               <div class="flex flex-col space-y-5">
                 <h1 class="self-center text-3xl text-slate-100">Register Now!</h1>
                 <div class="text-lg flex flex-row justify-between space-x-3 overflow-hidden">
                   <div class="text-lg flex flex-col justify-start w-1/2">
                     <p class="self-start text-base mb-1">First Name:</p>
-                    <input type="text" class="text-black px-2 py-1"/>
+                    <input title="firstname" type="text" class="text-black px-2 py-1"/>
                   </div>
   
                   <div class="text-lg flex flex-col justify-start w-1/2">
                     <p class="self-start text-base mb-1">Last Name:</p>
-                    <input type="text" class="text-black px-2 py-1"/>
+                    <input title="lastname" type="text" class="text-black px-2 py-1"/>
                   </div>
                 </div>
   
                 <div class="text-lg flex flex-col justify-start">
                   <p class="self-start text-base mb-1">Username / Email:</p>
-                  <input type="text" class="text-black px-2 py-1"/>
+                  <input title="username/mail" type="text" class="text-black px-2 py-1"/>
                 </div>
   
                 <div class="text-lg flex flex-row justify-between space-x-3 overflow-hidden">
                   <div class="text-lg flex flex-col justify-start w-1/2">
                     <p class="self-start text-base mb-1">Password:</p>
-                    <input type="password" class="text-black px-2 py-1"/>
+                    <input title="password" type="password" class="text-black px-2 py-1"/>
                   </div>
   
                   <div class="text-lg flex flex-col justify-start w-1/2">
                     <p class="self-start text-base mb-1">Confirm Password:</p>
-                    <input type="password" class="text-black px-2 py-1"/>
+                    <input title="confirmpass" type="password" class="text-black px-2 py-1"/>
                   </div>
                 </div>
   
                 <div class="flex flex-row text-sm space-x-1">
-                  <input type="checkbox"defaultChecked={true}/>
+                  <input title="checkbox" type="checkbox"defaultChecked={true}/>
                   <p>I have agree to the <a href="#" class="text-cyan-400 hover:underline">Terms and Conditions</a></p>
                 </div>
-                <button tytpe="submit" class="bg-slate-400 rounded-md py-2 font-bold text-lg ease-in-out duration-300 hover:bg-slate-500 hover:">Register</button>
+                <button type="submit" class="bg-slate-400 rounded-md py-2 font-bold text-lg ease-in-out duration-300 hover:bg-slate-500 hover:">Register</button>
               </div>
             </form>
   

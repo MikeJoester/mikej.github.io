@@ -35,16 +35,83 @@
 
                 <div class="flex flex-row space-x-2">
                     <h1>Username: </h1>
-                    <input type="text" value="username" class="rounded-lg text-black py-1 px-2"/>
-                    <button class="bg-slate-400 px-2 rounded-lg hover:bg-slate-500 ease-in-out duration-150">Edit Info</button>
+                    <input title="username" type="text" value="RigumaBallz" class="rounded-lg text-black py-1 px-2"/>
+                    <button class="bg-slate-400 px-2 rounded-lg hover:bg-slate-500 ease-in-out duration-150" onclick="toggleModal('modal-edit-id')">Edit Info</button>
+                    <div class="backdrop-blur-sm ease-in-out duration-300 hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center " id="modal-edit-id">
+                        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+                            <!--content-->
+                            <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-slate-800 outline-none focus:outline-none">
+                            <!--header-->
+                            <div class="flex p-5 border-b border-solid border-slate-200 rounded-t justify-between">
+                                <h3 class="bg-transparent text-3xl block font-semibold">
+                                    Edit User Information
+                                </h3>
+                                <button class="px-3 pb-2 bg-transparent border-0 text-white float-right leading-none font-semibold outline-white hover:bg-slate-200 hover:text-slate-800 rounded-xl" onclick="toggleEditModal('modal-edit-id')">
+                                    <span class="bg-transparent text-3xl block">
+                                        ×
+                                    </span>
+                                </button>
+                                
+                            </div>
+                            <!--body-->
+                            <div
+            class="backdrop-blur-sm justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none rounded-xl"
+          >
+            <div class="relative w-auto my-6 mx-auto max-w-3xl">
+              
+              <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-slate-800 outline-none focus:outline-none">
+                
+                <div class="flex p-5 border-b border-solid border-slate-200 rounded-t justify-between">
+                  <h3 class="text-3xl font-semibold">
+                    Edit user information
+                  </h3>
+                  <button class="px-3 pb-2 bg-transparent border-0 text-white float-right leading-none font-semibold outline-white hover:bg-slate-200 hover:text-slate-800 rounded-xl" onclick="toggleWriteModal('modal-edit-id')">
+                    <span class="bg-transparent text-3xl block">
+                        ×
+                    </span>
+                </button>
+                </div>
+                <div class="relative p-6 flex flex-row space-x-5">
+                    <div class="flex flex-col space-y-3">
+                        <h1>Change Username</h1>
+                        <input type="text" placeholder="New username..." class="pl-9 pr-3 py-3 text-lg w-full relative Edit-icon rounded-lg text-black"/>
+                        <input type="password" placeholder="Your password..." class="pl-9 pr-3 py-3 text-lg w-full relative Edit-icon rounded-lg text-black"/>
+            
+                        <button class="bg-slate-500 px-5 py-2 text-xl rounded-lg hover:bg-slate-400"> Save Changes </button>
+                    </div>
+
+                    <div class="flex flex-col space-y-3">
+                        <h1>Change Password</h1>
+                        <input type="text" placeholder="Old password..." class="pl-9 pr-3 py-3 text-lg w-full relative Edit-icon rounded-lg text-black"/>
+                        <input type="password" placeholder="New password..." class="pl-9 pr-3 py-3 text-lg w-full relative Edit-icon rounded-lg text-black"/>
+                        <input type="password" placeholder="Confirm new password..." class="pl-9 pr-3 py-3 text-lg w-full relative Edit-icon rounded-lg text-black"/>
+            
+                        <button class="bg-slate-500 px-5 py-2 text-xl rounded-lg hover:bg-slate-400"> Save Changes </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-edit-id-backdrop"></div>
+                        <script type="text/javascript">
+                        function toggleEditModal(modalID){
+                            document.getElementById(modalID).classList.toggle("hidden");
+                            document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+                            document.getElementById(modalID).classList.toggle("flex");
+                            document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+                        }
+                        </script>
                 </div>
 
                 <div class="flex flex-col space-y-1">
-                    <textarea rows="4" cols="50" class="text-black p-2 rounded-lg w-auto">User description here...</textarea>
+                    <textarea title="userdesc" rows="4" cols="50" class="text-black p-2 rounded-lg w-auto">User description here...</textarea>
                 </div>
 
                 <div class="flex flex-row justify-between">
-                    <button class="bg-red-600 px-4 py-1 rounded-lg hover:bg-red-700 ease-in-out duration-150">Log Out</button>
+                    <a href="login.html"><button class="bg-red-600 px-4 py-1 rounded-lg hover:bg-red-700 ease-in-out duration-150">Log Out</button></a>
                     <button class="bg-slate-400 rounded-lg px-3 py-1 flex flex-row items-center hover:bg-slate-500 ease-in-out duration-150">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z" fill="white"/></svg>
                     <h1 class="pl-3">Edit Description</h1>
